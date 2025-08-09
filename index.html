@@ -1,0 +1,1498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md Shaon Sheikh </title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+    <!-- Welcome Overlay -->
+    <div id="welcomeOverlay" class="welcome-overlay">
+        <div class="welcome-content">
+            <div class="animated-bg">
+                <div class="floating-circle circle-1"></div>
+                <div class="floating-circle circle-2"></div>
+                <div class="floating-circle circle-3"></div>
+                <div class="floating-circle circle-4"></div>
+                <div class="floating-line line-1"></div>
+                <div class="floating-line line-2"></div>
+            </div>
+            <div class="welcome-text-container">
+                <h1 class="welcome-title">
+                    <span id="typedText"></span>
+                    <span class="cursor">|</span>
+                </h1>
+                <p class="welcome-subtitle fade-in-delayed">Portfolio of Md Shaon Sheikh</p>
+                <button id="skipButton" class="skip-btn fade-in-delayed">
+                    <i class="fas fa-forward"></i> Skip
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="modern-navbar fixed-top">
+        <div class="navbar-container">
+            <div class="container">
+                <div class="navbar-content">
+                    <!-- Logo Section -->
+                    <div class="navbar-brand-section">
+                        <a class="modern-navbar-brand" href="index.html">
+                            <div class="brand-logo">
+                                <img src="img/logo.png" alt="Logo">
+                            </div>
+                        </a>
+                    </div>
+                    <style>
+                        .brand-logo img {
+                            width: 50px;
+                            height: 50px;
+                            object-fit: cover;
+                            border-radius: 50%;
+                        }
+                    </style>
+                    <!-- Desktop Navigation -->
+                    <div class="navbar-nav-desktop">
+                        <ul class="nav-menu">
+                            <li class="nav-item">
+                                <a class="nav-link-modern active" href="#home" data-text="Home">
+                                    <span class="nav-text">Home</span>
+                                    <span class="nav-indicator"></span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link-modern" href="#about" data-text="About">
+                                    <span class="nav-text">About</span>
+                                    <span class="nav-indicator"></span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link-modern" href="#resume" data-text="Resume">
+                                    <span class="nav-text">Resume</span>
+                                    <span class="nav-indicator"></span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link-modern" href="#services" data-text="Services">
+                                    <span class="nav-text">Services</span>
+                                    <span class="nav-indicator"></span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link-modern" href="#projects" data-text="Works">
+                                    <span class="nav-text">Works</span>
+                                    <span class="nav-indicator"></span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link-modern" href="#skills" data-text="Skills">
+                                    <span class="nav-text">Skills</span>
+                                    <span class="nav-indicator"></span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link-modern" href="#contact" data-text="Contact">
+                                    <span class="nav-text">Contact</span>
+                                    <span class="nav-indicator"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Right Section -->
+                    <div class="navbar-actions">
+                        <button id="themeToggle" class="theme-toggle-btn">
+                            <div class="toggle-icon">
+                                <i class="fas fa-moon moon-icon"></i>
+                                <i class="fas fa-sun sun-icon"></i>
+                            </div>
+                        </button>
+                        
+                        <!-- Mobile Menu Toggle -->
+                        <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                            <span class="hamburger-line"></span>
+                            <span class="hamburger-line"></span>
+                            <span class="hamburger-line"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav-overlay" id="mobileNavOverlay">
+            <div class="mobile-nav-content">
+                <ul class="mobile-nav-menu">
+                    <li class="mobile-nav-item">
+                        <a class="mobile-nav-link active" href="#home">
+                            <i class="fas fa-home nav-icon"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a class="mobile-nav-link" href="#about">
+                            <i class="fas fa-user nav-icon"></i>
+                            <span>About</span>
+                        </a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a class="mobile-nav-link" href="#resume">
+                            <i class="fas fa-file-alt nav-icon"></i>
+                            <span>Resume</span>
+                        </a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a class="mobile-nav-link" href="#services">
+                            <i class="fas fa-cogs nav-icon"></i>
+                            <span>Services</span>
+                        </a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a class="mobile-nav-link" href="#projects">
+                            <i class="fas fa-briefcase nav-icon"></i>
+                            <span>Works</span>
+                        </a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a class="mobile-nav-link" href="#skills">
+                            <i class="fas fa-code nav-icon"></i>
+                            <span>Skills</span>
+                        </a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a class="mobile-nav-link" href="#contact">
+                            <i class="fas fa-envelope nav-icon"></i>
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+                
+                <div class="mobile-nav-footer">
+                    <div class="mobile-social-links">
+                        <a href="https://github.com/shaon-coders" class="mobile-social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/shaon-coders/" class="mobile-social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://web.facebook.com/profile.php?id=61556142856082" class="mobile-social-link">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/shaon_coders/" class="mobile-social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- High-Contrast Portfolio Header -->
+    <section id="home" class="cinematic-header position-relative overflow-hidden" style="aspect-ratio: 16/9; min-height: 100vh;">
+        <!-- Pure Black Background -->
+        <div class="header-bg-black position-absolute w-100 h-100"></div>
+        
+        <!-- Animated Background Particles -->
+        <div class="particles-container position-absolute w-100 h-100">
+            <div class="particle particle-1"></div>
+            <div class="particle particle-2"></div>
+            <div class="particle particle-3"></div>
+            <div class="particle particle-4"></div>
+            <div class="particle particle-5"></div>
+            <div class="particle particle-6"></div>
+            <div class="particle particle-7"></div>
+            <div class="particle particle-8"></div>
+        </div>
+        
+        <!-- Geometric Shapes -->
+        <div class="geometric-shapes position-absolute w-100 h-100">
+            <div class="shape shape-triangle"></div>
+            <div class="shape shape-circle"></div>
+            <div class="shape shape-square"></div>
+            <div class="shape shape-hexagon"></div>
+        </div>
+        
+        <!-- Gradient Overlay -->
+        <div class="gradient-overlay position-absolute w-100 h-100"></div>
+        
+        <!-- Content Container -->
+        <div class="container-fluid h-100 position-relative">
+            <div class="row h-100 align-items-center">
+                <!-- Left Side - Negative Space for Content -->
+                <div class="col-lg-6 order-2 order-lg-1 h-100 d-flex align-items-center">
+                    <div class="header-content">
+                        <h1 class="header-title mb-3">
+                            Hi, I'm <span class="header-name-highlight">Shaon</span>
+                        </h1>
+                        <h2 class="header-subtitle mb-4">
+                            <span class="typing-text" data-text="Full Stack Developer,Django Expert,Web Designer,Problem Solver">Full Stack Developer</span>
+                        </h2>
+                        <p class="header-description mb-4">
+                            Passionate Computer Science student specializing in building modern, scalable web applications using Django, Python, and cutting-edge frontend technologies.
+                        </p>
+                        
+                        <!-- Header Buttons -->
+                        <div class="header-buttons mb-5">
+                            <a href="#contact" class="btn header-btn-primary">
+                                <i class="fas fa-rocket me-2"></i>Let's Work Together
+                            </a>
+                            <a href="img/cv.pdf" class="btn header-btn-secondary" download>
+                                <i class="fas fa-download me-2"></i>Download CV
+                            </a>
+                        </div>
+                        
+                        <!-- Social Links with Animation -->
+                        <div class="social-links-home">
+                            <a href="https://github.com/shaon-coders" class="social-link-home" data-tooltip="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/shaon-coders/" class="social-link-home" data-tooltip="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://x.com/shaon_coders" class="social-link-home" data-tooltip="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="mdshaonsheikh546@gmail.com" class="social-link-home" data-tooltip="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Right Side - Centered Image and Floating Logos -->
+                <div class="col-lg-6 order-1 order-lg-2 h-100 position-relative d-flex align-items-center justify-content-center">
+                    <!-- Circular Image Container -->
+                    <div class="circular-image-container-centered">
+                        <div class="circular-image-frame-large">
+                            <img src="img/home.png" alt="Md Shaon Sheikh" class="circular-portrait-large">
+                        </div>
+                    </div>
+                    
+                    <!-- Dynamic Programming Language Logos -->
+                    <div class="floating-logos-container position-absolute w-100 h-100">
+                        <!-- Python Logo -->
+                        <div class="floating-logo logo-javascript" data-logo="python">
+                            <i class="fab fa-python skill-icon" style="color: #3776ab;"></i>
+                        </div>
+                        
+                        <!-- JavaScript Logo -->
+                        <div class="floating-logo logo-javascript" data-logo="javascript">
+                           <i class="fab fa-python skill-icon" style="color: #3776ab;"></i>
+                        </div>
+                        
+                        <!-- Java Logo -->
+                        <div class="floating-logo logo-java" data-logo="java">
+                            <svg viewBox="0 0 24 24" fill="#ed8b00">
+                                <path d="M8.851 18.56s-.917.534.653.714c1.902.218 2.874.187 4.969-.211 0 0 .552.346 1.321.646-4.699 2.013-10.633-.118-6.943-1.149M8.276 15.933s-1.028.761.542.924c2.032.209 3.636.227 6.413-.308 0 0 .384.389 1.321.602-5.679 1.661-12.007.13-7.942-1.218M13.116 11.475c1.158 1.333-.304 2.533-.304 2.533s2.939-1.518 1.589-3.418c-1.261-1.772-2.228-2.652 3.007-5.688 0-.001-8.216 2.051-4.292 6.573M19.33 20.504s.679.559-.747.991c-2.712.822-11.288 1.069-13.669.033-.856-.373.75-.89 1.254-.998.527-.114.828-.093.828-.093-.953-.671-6.156 1.317-2.643 1.887 9.58 1.553 17.462-.7 14.977-1.82M9.292 13.21s-4.362 1.036-1.544 1.412c1.189.159 3.561.123 5.77-.062 1.806-.152 3.618-.477 3.618-.477s-.637.272-1.098.587c-4.429 1.165-12.986.623-10.522-.568 2.082-1.006 3.776-.892 3.776-.892M17.116 17.584c4.503-2.34 2.421-4.589.968-4.285-.355.074-.515.138-.515.138s.132-.207.385-.297c2.875-1.011 5.086 2.981-.928 4.562 0-.001.07-.062.09-.118M14.401 0s2.494 2.494-2.365 6.33c-3.896 3.077-.888 4.832-.001 6.836-2.274-2.053-3.943-3.858-2.824-5.539 1.644-2.469 6.197-3.665 5.19-7.627M9.734 23.924c4.322.277 10.959-.153 11.116-2.198 0 0-.302.775-3.572 1.391-3.688.694-8.239.613-10.937.168 0-.001.553.457 3.393.639"/>
+                            </svg>
+                        </div>
+                        
+                        <!-- HTML5 Logo -->
+                        <div class="floating-logo logo-html5" data-logo="html5">
+                            <svg viewBox="0 0 24 24" fill="#e34f26">
+                                <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"/>
+                            </svg>
+                        </div>
+                        
+                        <!-- CSS3 Logo -->
+                        <div class="floating-logo logo-css3" data-logo="css3">
+                            <svg viewBox="0 0 24 24" fill="#1572b6">
+                                <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <span class="scroll-text">Scroll Down</span>
+        </div>
+    </section>
+    <div class="section-divider">
+        <svg viewBox="0 0 1440 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="url(#gradient1)" fill-opacity="1" d="M0,32L60,26.7C120,21,240,11,360,10.7C480,11,600,21,720,32C840,43,960,53,1080,53.3C1200,53,1320,43,1380,37.3L1440,32L1440,48L1380,48C1320,48,1200,48,1080,48C960,48,840,48,720,48C600,48,480,48,360,48C240,48,120,48,60,48L0,48Z"></path><defs><linearGradient id="gradient1" x1="0" y1="0" x2="1440" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#0d6efd"/><stop offset="1" stop-color="#6c63ff"/></linearGradient></defs></svg>
+    </div>
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card about-card shadow-lg border-start border-4 border-primary p-4 animate-fade-in">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-user-graduate fa-2x text-primary me-3"></i>
+                            <h2 class="mb-0">About Me</h2>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-md-8">
+                                <h4 class="fw-bold mb-2">Who Am I?</h4>
+                                <p class="mb-2">Md Shaon Sheikh is a dedicated and passionate Computer Science diploma student from Mangrove Institute of Science and Technology. With a strong foundation in both frontend and backend development, he has built real-world applications such as eCommerce systems and college ERP platforms using Django, HTML, CSS, JavaScript, and AJAX.</p>
+                                <p class="mb-2">He is also active in college co-curriculars, having hosted and led farewell events. Md Shaon is enthusiastic about software development, learning modern technologies, and dreams of working abroad or pursuing higher education in tech.</p>
+                                <ul class="list-unstyled mb-0">
+                                    <li><i class="fas fa-flag me-2 text-primary"></i><strong>Country:</strong> Bangladesh</li>
+                                    <li><i class="fas fa-graduation-cap me-2 text-primary"></i><strong>Current Education:</strong> Diploma in Computer Science</li>
+                                    <li><i class="fas fa-school me-2 text-primary"></i><strong>Institute:</strong> Mangrove Institute of Science and Technology</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 text-center mt-4 mt-md-0">
+                                <div class="about-img-container">
+                                    <img src="img/shaon.jpg" alt="About Me" class="img-fluid" style="max-width:150px;">
+                                    <span class="about-badge"><i class="fas fa-user-graduate"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="section-divider">
+        <svg viewBox="0 0 1440 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="url(#gradient1)" fill-opacity="1" d="M0,32L60,26.7C120,21,240,11,360,10.7C480,11,600,21,720,32C840,43,960,53,1080,53.3C1200,53,1320,43,1380,37.3L1440,32L1440,48L1380,48C1320,48,1200,48,1080,48C960,48,840,48,720,48C600,48,480,48,360,48C240,48,120,48,60,48L0,48Z"></path><defs><linearGradient id="gradient1" x1="0" y1="0" x2="1440" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#0d6efd"/><stop offset="1" stop-color="#6c63ff"/></linearGradient></defs></svg>
+    </div>
+    <!-- Resume Section -->
+    <section id="resume" class="py-5">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h2>Resume</h2>
+                <div class="line"></div>
+                <p class="text-info">My experience and education</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-5">
+                    <div class="card resume-card shadow-lg border-start border-4 border-primary p-4 animate-fade-in">
+                        <div class="d-flex align-items-center mb-4">
+                            <i class="fas fa-briefcase fa-2x text-primary me-3"></i>
+                            <h3 class="mb-0">My Experience</h3>
+                        </div>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-date">2024 - Present</div>
+                                <div class="timeline-content">
+                                    <h4>Web Developer</h4>
+                                    <h5>Marketplase</h5>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">2025 - Present</div>
+                                <div class="timeline-content">
+                                    <h4>Full-stack web developer</h4>
+                                    <h5>WebByte Studio</h5>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">2024</div>
+                                <div class="timeline-content">
+                                    <h4>Full-stack web developer</h4>
+                                    <h5>Business IQ</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5">
+                    <div class="card resume-card shadow-lg border-start border-4 border-primary p-4 animate-fade-in">
+                        <div class="d-flex align-items-center mb-4">
+                            <i class="fas fa-graduation-cap fa-2x text-primary me-3"></i>
+                            <h3 class="mb-0">My Education</h3>
+                        </div>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-date">2023-Present</div>
+                                <div class="timeline-content">
+                                    <h4>Diploma in CST</h4>
+                                    <h5>Mangrove Institute of Science and Technology</h5>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">2024 - 2025</div>
+                                <div class="timeline-content">
+                                    <h4>Backend API Development with Python</h4>
+                                    <h5>AI Quest Academy. Batch 10</h5>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">2022-2023</div>
+                                <div class="timeline-content">
+                                    <h4>Web design course</h4>
+                                    <h5>Hablu Programmer</h5>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">2022</div>
+                                <div class="timeline-content">
+                                    <h4>SSC</h4>
+                                    <h5>Joshor board</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="section-divider">
+        <svg viewBox="0 0 1440 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="url(#gradient1)" fill-opacity="1" d="M0,32L60,26.7C120,21,240,11,360,10.7C480,11,600,21,720,32C840,43,960,53,1080,53.3C1200,53,1320,43,1380,37.3L1440,32L1440,48L1380,48C1320,48,1200,48,1080,48C960,48,840,48,720,48C600,48,480,48,360,48C240,48,120,48,60,48L0,48Z"></path><defs><linearGradient id="gradient1" x1="0" y1="0" x2="1440" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#0d6efd"/><stop offset="1" stop-color="#6c63ff"/></linearGradient></defs></svg>
+    </div>
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h2>My Services</h2>
+                <div class="line"></div>
+                <p class="text-info">What I can do for you</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-3 text-center">
+                    <div class="card h-100 p-3 service-card border-0 shadow-sm animate-fade-in">
+                        <i class="fas fa-laptop-code fa-2x text-primary mb-3"></i>
+                        <h5>Web Development</h5>
+                        <p>Full-stack web development using Django, HTML, CSS, JavaScript, and Bootstrap. Custom solutions tailored to your needs.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="card h-100 p-3 service-card border-0 shadow-sm animate-fade-in">
+                        <i class="fas fa-mobile-alt fa-2x text-primary mb-3"></i>
+                        <h5>UI/UX Design</h5>
+                        <p>Modern, responsive designs with Bootstrap and custom CSS. User-friendly interfaces that enhance user experience.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="card h-100 p-3 service-card border-0 shadow-sm animate-fade-in">
+                        <i class="fas fa-cogs fa-2x text-primary mb-3"></i>
+                        <h5>Website Maintenance</h5>
+                        <p>Regular updates, bug fixes, and performance optimization. Keep your website running smoothly and securely.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="card h-100 p-3 service-card border-0 shadow-sm animate-fade-in">
+                        <i class="fas fa-server fa-2x text-primary mb-3"></i>
+                        <h5>Database Design</h5>
+                        <p>Efficient database architecture and management. Secure, scalable solutions for your data needs.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="card h-100 p-3 service-card border-0 shadow-sm animate-fade-in">
+                        <i class="fas fa-desktop"></i>
+                        <h5>Operating System Management</h5>
+                        <p>I provide installation, configuration, and maintenance services for operating systems.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="card h-100 p-3 service-card border-0 shadow-sm animate-fade-in">
+                        <i class="fas fa-headset fa-2x text-primary mb-3"></i>
+                        <h5>IT Support & Services</h5>
+                        <p>I provide technical support and IT solutions to ensure smooth business operations.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 text-center">
+                    <div class="card h-100 p-3 service-card border-0 shadow-sm animate-fade-in">
+                        <i class="fas fa-robot"></i>
+                        <h5>Robotics Code & Robotic Services</h5>
+                        <p>I develop robotics software and provide automation solutions to enhance efficiency.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="section-divider">
+        <svg viewBox="0 0 1440 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="url(#gradient1)" fill-opacity="1" d="M0,32L60,26.7C120,21,240,11,360,10.7C480,11,600,21,720,32C840,43,960,53,1080,53.3C1200,53,1320,43,1380,37.3L1440,32L1440,48L1380,48C1320,48,1200,48,1080,48C960,48,840,48,720,48C600,48,480,48,360,48C240,48,120,48,60,48L0,48Z"></path><defs><linearGradient id="gradient1" x1="0" y1="0" x2="1440" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#0d6efd"/><stop offset="1" stop-color="#6c63ff"/></linearGradient></defs></svg>
+    </div>
+    <!-- Works Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h2>My Recent Works</h2>
+                <p class="text-info">We put your ideas and thus your wishes in the form of a unique web project that inspires you and you customers.</p>
+                <div class="line"></div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 project-card animate-fade-in">
+                        <img src="img/ecom.png" class="card-img-top" alt="Django eCommerce Website">
+                        <div class="project-overlay">
+                            <h5>Django eCommerce Website</h5>
+                            <p>Product search, price filtering (AJAX), user authentication. create defult admon panal and manager dashboard</p>
+                            <a href="#" class="btn btn-light btn-animate">Live Demo</a>
+                            <a href="#" class="btn btn-outline-light btn-animate">GitHub</a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Django eCommerce Website</h5>
+                            <p class="card-text">Product search, price filtering (AJAX), user authentication. create defult admon panal and manager dashboard</p>
+                            <span class="badge bg-primary">Django+Python</span>
+                            <span class="badge bg-primary">HTML</span>
+                            <span class="badge bg-primary">CSS</span>
+                            <span class="badge bg-primary">JS</span>
+                            <span class="badge bg-primary">Bootstrap</span>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 text-center">
+                            <a href="#" class="btn btn-outline-primary btn-sm btn-animate">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 project-card animate-fade-in">
+                        <img src="img/dsa.jpg" class="card-img-top" alt="College ERP System">
+                        <div class="project-overlay">
+                            <h5>College ERP System</h5>
+                            <p>Role-based dashboards, modules for profile, results, complaints, and more.</p>
+                            <a href="#" class="btn btn-light btn-animate">Live Demo</a>
+                            <a href="#" class="btn btn-outline-light btn-animate">GitHub</a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">College ERP System</h5>
+                            <p class="card-text">Role-based dashboards, modules for profile, results, complaints, and more.</p>
+                            <span class="badge bg-primary">Django</span>
+                            <span class="badge bg-primary">Bootstrap</span>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 text-center">
+                            <a href="#" class="btn btn-outline-primary btn-sm btn-animate">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 project-card animate-fade-in">
+                        <img src="img/ordermanage.png" class="card-img-top" alt="Order Management Interface">
+                        <div class="project-overlay">
+                            <h5>Order Management Interface</h5>
+                            <p>Shows order details, customer info, filterable list, order status.</p>
+                            <a href="#" class="btn btn-light btn-animate">Live Demo</a>
+                            <a href="#" class="btn btn-outline-light btn-animate">GitHub</a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Order Management Interface</h5>
+                            <p class="card-text">Shows order details, customer info, filterable list, order status.</p>
+                            <span class="badge bg-primary">Django</span>
+                            <span class="badge bg-primary">Templates</span>
+                            <span class="badge bg-primary">Bootstrap</span>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 text-center">
+                            <a href="#" class="btn btn-outline-primary btn-sm btn-animate">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 project-card animate-fade-in">
+                        <img src="img/blood.png" class="card-img-top" alt="Order Management Interface">
+                        <div class="project-overlay">
+                            <h5>Online blood bank</h5>
+                            <p>Shows order details, customer info, filterable list, order status.</p>
+                            <a href="#" class="btn btn-light btn-animate">Live Demo</a>
+                            <a href="#" class="btn btn-outline-light btn-animate">GitHub</a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Online blood bank </h5>
+                            <p class="card-text">Displays donor and recipient details, blood availability, request tracking, and status filtering.</p>
+                            <span class="badge bg-primary">PHP</span>
+                            <span class="badge bg-primary">HTML+CSS</span>
+                            <span class="badge bg-primary">Bootstrap</span>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 text-center">
+                            <a href="#" class="btn btn-outline-primary btn-sm btn-animate">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 project-card animate-fade-in">
+                        <img src="img/skill.png" class="card-img-top" alt="Order Management Interface">
+                        <div class="project-overlay">
+                            <h5>Skill swipe hub</h5>
+                            <p>Interactive platform showcasing skills with dynamic filtering, user profiles, and progress tracking.</p>
+                            <a href="#" class="btn btn-light btn-animate">Live Demo</a>
+                            <a href="#" class="btn btn-outline-light btn-animate">GitHub</a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Skills swipe hub</h5>
+                            <p class="card-text">Interactive platform showcasing skills with dynamic filtering, user profiles, and progress tracking.</p>
+                            <span class="badge bg-primary">PHP</span>
+                            <span class="badge bg-primary">HTML+CSS</span>
+                            <span class="badge bg-primary">Bootstrap</span>
+                        </div>
+                        <div class="card-footer bg-transparent border-0 text-center">
+                            <a href="#" class="btn btn-outline-primary btn-sm btn-animate">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="section-divider">
+        <svg viewBox="0 0 1440 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="url(#gradient1)" fill-opacity="1" d="M0,32L60,26.7C120,21,240,11,360,10.7C480,11,600,21,720,32C840,43,960,53,1080,53.3C1200,53,1320,43,1380,37.3L1440,32L1440,48L1380,48C1320,48,1200,48,1080,48C960,48,840,48,720,48C600,48,480,48,360,48C240,48,120,48,60,48L0,48Z"></path><defs><linearGradient id="gradient1" x1="0" y1="0" x2="1440" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#0d6efd"/><stop offset="1" stop-color="#6c63ff"/></linearGradient></defs></svg>
+    </div>
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 skills-section">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h2 class="skills-main-title">Technical Skills</h2>
+                <div class="line"></div>
+                <p class="skills-subtitle">My expertise in modern technologies</p>
+            </div>
+            
+            <!-- Skills Categories -->
+            <div class="row g-4 mb-5">
+                <!-- Frontend Skills -->
+                <div class="col-lg-6">
+                    <div class="skill-category-card">
+                        <div class="skill-category-header">
+                            <i class="fas fa-code skill-category-icon"></i>
+                            <h3 class="skill-category-title">Frontend Development</h3>
+                        </div>
+                        <div class="skills-grid">
+                            <div class="skill-item-modern">
+                                <div class="skill-icon-wrapper">
+                                    <i class="fab fa-html5 skill-icon" style="color: #e34f26;"></i>
+                                </div>
+                                <div class="skill-content">
+                                    <h5 class="skill-name">HTML5</h5>
+                                    <div class="skill-progress-wrapper">
+                                        <div class="skill-progress-bar">
+                                            <div class="skill-progress-fill" data-width="90%"></div>
+                                        </div>
+                                        <span class="skill-percentage">90%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item-modern">
+                                <div class="skill-icon-wrapper">
+                                    <i class="fab fa-css3-alt skill-icon" style="color: #1572b6;"></i>
+                                </div>
+                                <div class="skill-content">
+                                    <h5 class="skill-name">CSS3</h5>
+                                    <div class="skill-progress-wrapper">
+                                        <div class="skill-progress-bar">
+                                            <div class="skill-progress-fill" data-width="90%"></div>
+                                        </div>
+                                        <span class="skill-percentage">90%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item-modern">
+                                <div class="skill-icon-wrapper">
+                                    <i class="fab fa-js-square skill-icon" style="color: #f7df1e;"></i>
+                                </div>
+                                <div class="skill-content">
+                                    <h5 class="skill-name">JavaScript</h5>
+                                    <div class="skill-progress-wrapper">
+                                        <div class="skill-progress-bar">
+                                            <div class="skill-progress-fill" data-width="30%"></div>
+                                        </div>
+                                        <span class="skill-percentage">30%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item-modern">
+                                <div class="skill-icon-wrapper">
+                                    <i class="fab fa-bootstrap skill-icon" style="color: #7952b3;"></i>
+                                </div>
+                                <div class="skill-content">
+                                    <h5 class="skill-name">Bootstrap</h5>
+                                    <div class="skill-progress-wrapper">
+                                        <div class="skill-progress-bar">
+                                            <div class="skill-progress-fill" data-width="85%"></div>
+                                        </div>
+                                        <span class="skill-percentage">85%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Backend Skills -->
+                <div class="col-lg-6">
+                    <div class="skill-category-card">
+                        <div class="skill-category-header">
+                            <i class="fas fa-server skill-category-icon"></i>
+                            <h3 class="skill-category-title">Backend Development</h3>
+                        </div>
+                        <div class="skills-grid">
+                            <div class="skill-item-modern">
+                                <div class="skill-icon-wrapper">
+                                    <i class="fab fa-python skill-icon" style="color: #3776ab;"></i>
+                                </div>
+                                <div class="skill-content">
+                                    <h5 class="skill-name">Python</h5>
+                                    <div class="skill-progress-wrapper">
+                                        <div class="skill-progress-bar">
+                                            <div class="skill-progress-fill" data-width="70%"></div>
+                                        </div>
+                                        <span class="skill-percentage">70%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item-modern">
+                                <div class="skill-icon-wrapper">
+                                    <i class="fab fa-django skill-icon" style="color: #092e20;"></i>
+                                </div>
+                                <div class="skill-content">
+                                    <h5 class="skill-name">Django</h5>
+                                    <div class="skill-progress-wrapper">
+                                        <div class="skill-progress-bar">
+                                            <div class="skill-progress-fill" data-width="60%"></div>
+                                        </div>
+                                        <span class="skill-percentage">85%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item-modern">
+                                <div class="skill-icon-wrapper">
+                                    <i class="fab fa-php skill-icon" style="color: #777bb4;"></i>
+                                </div>
+                                <div class="skill-content">
+                                    <h5 class="skill-name">PHP</h5>
+                                    <div class="skill-progress-wrapper">
+                                        <div class="skill-progress-bar">
+                                            <div class="skill-progress-fill" data-width="50%"></div>
+                                        </div>
+                                        <span class="skill-percentage">50%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item-modern">
+                                <div class="skill-icon-wrapper">
+                                    <i class="fab fa-java skill-icon" style="color: #ed8b00;"></i>
+                                </div>
+                                <div class="skill-content">
+                                    <h5 class="skill-name">Java</h5>
+                                    <div class="skill-progress-wrapper">
+                                        <div class="skill-progress-bar">
+                                            <div class="skill-progress-fill" data-width="40%"></div>
+                                        </div>
+                                        <span class="skill-percentage">40%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Additional Skills -->
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="additional-skills-card">
+                        <h4 class="additional-skills-title">Additional Technologies</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Django REST Framework</span>
+                            <span class="skill-tag">MySQL</span>
+                            <span class="skill-tag">Git & GitHub</span>
+                            <span class="skill-tag">AJAX</span>
+                            <span class="skill-tag">Responsive Design</span>
+                            <span class="skill-tag">API Development</span>
+                            <span class="skill-tag">Database Design</span>
+                            <span class="skill-tag">Web Security</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 contact-section">
+        <div class="container">
+            <div class="row g-0">
+                <!-- Keep In Touch Card -->
+                <div class="col-lg-6">
+                    <div class="contact-card-left h-100 p-5">
+                        <h2 class="contact-title mb-4">Keep In Touch!</h2>
+                        <p class="contact-subtitle mb-5">I design and code beautifully simple things and I love what I do. Just simple like that!</p>
+                        
+                        <form id="contactForm" class="contact-form">
+                            <div class="row g-3 mb-3">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control contact-input" id="firstName" placeholder="First name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control contact-input" id="lastName" placeholder="Last name" required>
+                                </div>
+                            </div>
+                            <div class="row g-3 mb-3">
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control contact-input" id="email" placeholder="Email address" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="tel" class="form-control contact-input" id="phone" placeholder="Phone number">
+                                </div>
+                            </div>
+                            <div class="mb-4">
+                                <select class="form-select contact-select" id="service" required>
+                                    <option value="">Choose Service</option>
+                                    <option value="django-development">Backend Development</option>
+                                    <option value="frontend-development">Frontend Development</option>
+                                    <option value="full-stack">Full Stack Development</option>
+                                    <option value="consultation">UI/UX Design</option>
+                                    <option value="website-maintenance">Website Maintenance</option>
+                                    <option value="it-support">IT support & services</option>
+
+                                </select>
+                            </div>
+                            <div class="mb-4">
+                                <textarea class="form-control contact-textarea" id="message" rows="4" placeholder="Tell me about your project..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn contact-btn w-100">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Contact Info Card -->
+                <div class="col-lg-6">
+                    <div class="contact-card-right h-100 p-5">
+                        <h2 class="contact-info-title mb-4">Contact Info</h2>
+                        <p class="contact-info-subtitle mb-5">Feel free to reach out to me through any of these channels.</p>
+                        
+                        <div class="contact-info-item mb-4">
+                            <div class="contact-info-label">PHONE</div>
+                            <div class="contact-info-value">01307201070</div>
+                        </div>
+                        
+                        <div class="contact-info-item mb-5">
+                            <div class="contact-info-label">EMAIL</div>
+                            <div class="contact-info-value">mdshaonsheikh546@gmail.com</div>
+                        </div>
+                        <div class="contact-info-item mb-5">
+                            <div class="contact-info-label">ADDRESS</div>
+                            <div class="contact-info-value">Boikali, Khulna, Bangladesh</div>
+                        </div>
+                        
+                        <div class="social-links-modern">
+                            <a href="https://github.com/shaon-coders" class="social-link-modern" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/shaon-coders/" class="social-link-modern" title="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://www.instagram.com/shaon_coders/" class="social-link-modern" title="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://web.facebook.com/profile.php?id=61556142856082" class="social-link-modern" title="Facebook">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="modern-footer">
+        <div class="footer-content">
+            <div class="container">
+                <div class="row g-4">
+                    <!-- About Section -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-section">
+                            <div class="footer-logo-section">
+                                <div class="footer-logo">
+                                    <div class="logo-icon">S</div>
+                                    <h3 class="footer-brand">Md Shaon Sheikh</h3>
+                                </div>
+                                <p class="footer-description">
+                                    Passionate Full Stack Developer crafting innovative web solutions with modern technologies. 
+                                    Transforming ideas into digital reality.
+                                </p>
+                            </div>
+                            <div class="footer-social-links">
+                                <a href="https://github.com/shaon-coders" class="footer-social-link" title="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/shaon-coders/" class="footer-social-link" title="LinkedIn">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://web.facebook.com/profile.php?id=61556142856082" class="footer-social-link" title="Facebook">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="https://www.instagram.com/shaon_coders/" class="footer-social-link" title="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Quick Links Section -->
+                    <div class="col-lg-2 col-md-6">
+                        <div class="footer-section">
+                            <h4 class="footer-title">Quick Links</h4>
+                            <ul class="footer-links">
+                                <li><a href="#home" class="footer-link">Home</a></li>
+                                <li><a href="#about" class="footer-link">About</a></li>
+                                <li><a href="#resume" class="footer-link">Resume</a></li>
+                                <li><a href="#services" class="footer-link">Services</a></li>
+                                <li><a href="#projects" class="footer-link">Projects</a></li>
+                                <li><a href="#skills" class="footer-link">Skills</a></li>
+                                <li><a href="#contact" class="footer-link">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Services Section -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-section">
+                            <h4 class="footer-title">Services</h4>
+                            <ul class="footer-links">
+                                <li><a href="#" class="footer-link">Web Development</a></li>
+                                <li><a href="#" class="footer-link">Backend Development</a></li>
+                                <li><a href="#" class="footer-link">Frontend Development</a></li>
+                                <li><a href="#" class="footer-link">Full Stack Solutions</a></li>
+                                <li><a href="#" class="footer-link">UI/UX Design</a></li>
+                                <li><a href="#" class="footer-link">Website Maintenance</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Info Section -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-section">
+                            <h4 class="footer-title">Get In Touch</h4>
+                            <div class="footer-contact-info">
+                                <div class="footer-contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <span class="contact-label">Email</span>
+                                        <a href="mailto:mdshaonsheikh546@gmail.com" class="contact-value">mdshaonsheikh546@gmail.com</a>
+                                    </div>
+                                </div>
+                                <div class="footer-contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <span class="contact-label">Phone</span>
+                                        <a href="tel:01307201070" class="contact-value">01307201070</a>
+                                    </div>
+                                </div>
+                                <div class="footer-contact-item">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="contact-details">
+                                        <span class="contact-label">Location</span>
+                                        <span class="contact-value">Boikali, Khulna, Bangladesh</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="footer-copyright">
+                            &copy; <span id="currentYear"></span> Md Shaon Sheikh. All rights reserved.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="footer-bottom-links">
+                            <a href="#" class="footer-bottom-link">Privacy Policy</a>
+                            <a href="#" class="footer-bottom-link">Terms of Service</a>
+                            <a href="#" class="footer-bottom-link">Sitemap</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+        // Welcome Overlay Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const overlay = document.getElementById('welcomeOverlay');
+            const typedTextElement = document.getElementById('typedText');
+            const skipButton = document.getElementById('skipButton');
+            
+            // Typing effect configuration
+            const messages = [
+                "Welcome to my website",
+                "I'm Md Shaon Sheikh",
+                "Full Stack Developer",
+                "Let's explore together!"
+            ];
+            
+            let messageIndex = 0;
+            let charIndex = 0;
+            let isDeleting = false;
+            let typingSpeed = 100;
+            
+            function typeWriter() {
+                const currentMessage = messages[messageIndex];
+                
+                if (isDeleting) {
+                    typedTextElement.textContent = currentMessage.substring(0, charIndex - 1);
+                    charIndex--;
+                    typingSpeed = 50;
+                } else {
+                    typedTextElement.textContent = currentMessage.substring(0, charIndex + 1);
+                    charIndex++;
+                    typingSpeed = 100;
+                }
+                
+                if (!isDeleting && charIndex === currentMessage.length) {
+                    // Pause at end of message
+                    typingSpeed = 2000;
+                    isDeleting = true;
+                } else if (isDeleting && charIndex === 0) {
+                    isDeleting = false;
+                    messageIndex = (messageIndex + 1) % messages.length;
+                    typingSpeed = 500;
+                }
+                
+                setTimeout(typeWriter, typingSpeed);
+            }
+            
+            // Start typing effect
+            setTimeout(typeWriter, 400);
+            // Auto-hide overlay after 1.5 seconds
+            const autoHideTimer = setTimeout(hideOverlay, 1500);
+            
+            // Skip button functionality
+            skipButton.addEventListener('click', function() {
+                clearTimeout(autoHideTimer);
+                hideOverlay();
+            });
+            
+            // Hide overlay function
+            function hideOverlay() {
+                overlay.classList.add('fade-out');
+                setTimeout(() => {
+                    overlay.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }, 600);
+            }
+            
+            // Prevent scrolling while overlay is visible
+            document.body.style.overflow = 'hidden';
+        });
+        
+        // Enhanced Navbar Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const navbar = document.querySelector('.navbar');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            // Navbar scroll effect
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+            
+            // Active link highlighting on scroll
+            const sections = document.querySelectorAll('section[id]');
+            
+            function updateActiveLink() {
+                let current = '';
+                
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (window.scrollY >= (sectionTop - 200)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${current}`) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+            
+            window.addEventListener('scroll', updateActiveLink);
+            updateActiveLink(); // Call once on load
+            
+            // Smooth scrolling for nav links
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    
+                    if (targetSection) {
+                        const offsetTop = targetSection.offsetTop - 70;
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Close mobile menu when clicking on a link
+            const navbarCollapse = document.querySelector('.navbar-collapse');
+            const navbarToggler = document.querySelector('.navbar-toggler');
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    if (navbarCollapse.classList.contains('show')) {
+                        navbarToggler.click();
+                    }
+                });
+            });
+            
+            // Skills Section Animations
+            const skillsSection = document.querySelector('#skills');
+            const skillProgressBars = document.querySelectorAll('.skill-progress-fill');
+            const skillItems = document.querySelectorAll('.skill-item-modern');
+            const skillTags = document.querySelectorAll('.skill-tag');
+            let skillsAnimated = false;
+            
+            // Intersection Observer for Skills Section
+            const skillsObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting && !skillsAnimated) {
+                        animateSkills();
+                        skillsAnimated = true;
+                    }
+                });
+            }, {
+                threshold: 0.3,
+                rootMargin: '0px 0px -100px 0px'
+            });
+            
+            if (skillsSection) {
+                skillsObserver.observe(skillsSection);
+            }
+            
+            function animateSkills() {
+                // Animate progress bars
+                skillProgressBars.forEach((bar, index) => {
+                    const targetWidth = bar.getAttribute('data-width');
+                    
+                    setTimeout(() => {
+                        bar.style.width = '0%';
+                        bar.style.transition = 'width 1.5s cubic-bezier(0.4, 0, 0.2, 1)';
+                        
+                        setTimeout(() => {
+                            bar.style.width = targetWidth;
+                        }, 100);
+                    }, index * 200);
+                });
+                
+                // Add stagger animation to skill items
+                skillItems.forEach((item, index) => {
+                    item.style.animationDelay = `${index * 0.1}s`;
+                });
+                
+                // Add stagger animation to skill tags
+                skillTags.forEach((tag, index) => {
+                    tag.style.animationDelay = `${1 + index * 0.1}s`;
+                });
+            }
+            
+            // Enhanced hover effects for skill items
+            skillItems.forEach(item => {
+                const progressBar = item.querySelector('.skill-progress-fill');
+                const percentage = item.querySelector('.skill-percentage');
+                
+                item.addEventListener('mouseenter', function() {
+                    // Add pulse effect to progress bar
+                    if (progressBar) {
+                        progressBar.style.animation = 'progressGlow 1s ease-in-out infinite, progressPulse 0.6s ease-out';
+                    }
+                    
+                    // Add bounce effect to percentage
+                    if (percentage) {
+                        percentage.style.animation = 'bounceScale 0.6s ease-out';
+                    }
+                });
+                
+                item.addEventListener('mouseleave', function() {
+                    // Reset animations
+                    if (progressBar) {
+                        progressBar.style.animation = 'progressGlow 2s ease-in-out infinite';
+                    }
+                    
+                    if (percentage) {
+                        percentage.style.animation = '';
+                    }
+                });
+            });
+            
+            // Add click interactions to skill tags
+            skillTags.forEach(tag => {
+                tag.addEventListener('click', function() {
+                    // Create ripple effect
+                    const ripple = document.createElement('div');
+                    ripple.style.position = 'absolute';
+                    ripple.style.borderRadius = '50%';
+                    ripple.style.background = 'rgba(78, 205, 196, 0.6)';
+                    ripple.style.transform = 'scale(0)';
+                    ripple.style.animation = 'rippleEffect 0.6s linear';
+                    ripple.style.left = '50%';
+                    ripple.style.top = '50%';
+                    ripple.style.width = '20px';
+                    ripple.style.height = '20px';
+                    ripple.style.marginLeft = '-10px';
+                    ripple.style.marginTop = '-10px';
+                    ripple.style.pointerEvents = 'none';
+                    
+                    this.appendChild(ripple);
+                    
+                    setTimeout(() => {
+                        ripple.remove();
+                    }, 600);
+                    
+                    // Add bounce effect to the tag
+                    this.style.animation = 'tagBounce 0.6s ease-out';
+                    
+                    setTimeout(() => {
+                        this.style.animation = '';
+                    }, 600);
+                });
+            });
+            
+            // Add dynamic CSS animations
+            const style = document.createElement('style');
+            style.textContent = `
+                @keyframes progressPulse {
+                    0% { transform: scaleY(1); }
+                    50% { transform: scaleY(1.2); }
+                    100% { transform: scaleY(1); }
+                }
+                
+                @keyframes bounceScale {
+                    0% { transform: scale(1); }
+                    50% { transform: scale(1.3); }
+                    100% { transform: scale(1.1); }
+                }
+                
+                @keyframes rippleEffect {
+                    to {
+                        transform: scale(4);
+                        opacity: 0;
+                    }
+                }
+                
+                @keyframes tagBounce {
+                    0% { transform: translateY(-5px) scale(1.05); }
+                    50% { transform: translateY(-10px) scale(1.1); }
+                    100% { transform: translateY(-5px) scale(1.05); }
+                }
+            `;
+            document.head.appendChild(style);
+            
+            // Footer functionality
+            const currentYearElement = document.getElementById('currentYear');
+            if (currentYearElement) {
+                currentYearElement.textContent = new Date().getFullYear();
+            }
+            
+            // Footer animations on scroll
+            const footerSections = document.querySelectorAll('.footer-section');
+            const footerObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animationPlayState = 'running';
+                    }
+                });
+            }, {
+                threshold: 0.2,
+                rootMargin: '0px 0px -50px 0px'
+            });
+            
+            footerSections.forEach(section => {
+                footerObserver.observe(section);
+            });
+            
+            // Smooth scroll for footer links
+            const footerLinks = document.querySelectorAll('.footer-link[href^="#"]');
+            footerLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    
+                    if (targetSection) {
+                        const offsetTop = targetSection.offsetTop - 70;
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Modern Navbar functionality
+            const modernNavbar = document.querySelector('.modern-navbar');
+            const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+            const mobileNavOverlay = document.getElementById('mobileNavOverlay');
+            const mobileNavClose = document.getElementById('mobileNavClose');
+            const navLinksModern = document.querySelectorAll('.nav-link-modern');
+            const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+            
+            // Navbar scroll effect
+            let lastScrollTop = 0;
+            window.addEventListener('scroll', function() {
+                const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                
+                // Add scrolled class for backdrop blur effect
+                if (scrollTop > 50) {
+                    modernNavbar.classList.add('scrolled');
+                } else {
+                    modernNavbar.classList.remove('scrolled');
+                }
+                
+                lastScrollTop = scrollTop;
+            });
+            
+            // Mobile menu toggle functionality
+            function toggleMobileMenu() {
+                mobileMenuToggle.classList.toggle('active');
+                mobileNavOverlay.classList.toggle('active');
+                document.body.style.overflow = mobileNavOverlay.classList.contains('active') ? 'hidden' : '';
+            }
+            
+            function closeMobileMenu() {
+                mobileMenuToggle.classList.remove('active');
+                mobileNavOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+            
+            if (mobileMenuToggle) {
+                mobileMenuToggle.addEventListener('click', toggleMobileMenu);
+            }
+            
+            if (mobileNavClose) {
+                mobileNavClose.addEventListener('click', closeMobileMenu);
+            }
+            
+            // Close mobile menu when clicking on overlay
+            if (mobileNavOverlay) {
+                mobileNavOverlay.addEventListener('click', function(e) {
+                    if (e.target === mobileNavOverlay) {
+                        closeMobileMenu();
+                    }
+                });
+            }
+            
+            // Enhanced active link highlighting for modern navbar
+            const sectionsModern = document.querySelectorAll('section[id]');
+            
+            function updateActiveNavLink() {
+                let current = '';
+                
+                sectionsModern.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (window.scrollY >= (sectionTop - 200)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                
+                // Update desktop nav links
+                navLinksModern.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${current}`) {
+                        link.classList.add('active');
+                    }
+                });
+                
+                // Update mobile nav links
+                mobileNavLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${current}`) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+            
+            window.addEventListener('scroll', updateActiveNavLink);
+            updateActiveNavLink(); // Call once on load
+            
+            // Smooth scrolling for modern nav links
+            [...navLinksModern, ...mobileNavLinks].forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    
+                    if (targetSection) {
+                        const offsetTop = targetSection.offsetTop - 80;
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: 'smooth'
+                        });
+                        
+                        // Close mobile menu if open
+                        if (mobileNavOverlay.classList.contains('active')) {
+                            closeMobileMenu();
+                        }
+                    }
+                });
+            });
+            
+            // Enhanced theme toggle functionality
+            const themeToggleBtn = document.getElementById('themeToggle');
+            const moonIcon = document.querySelector('.moon-icon');
+            const sunIcon = document.querySelector('.sun-icon');
+            
+            if (themeToggleBtn && moonIcon && sunIcon) {
+                themeToggleBtn.addEventListener('click', function() {
+                    // Add rotation animation
+                    this.style.transform = 'rotate(360deg)';
+                    
+                    setTimeout(() => {
+                        // Toggle icons
+                        if (moonIcon.style.opacity === '0') {
+                            moonIcon.style.opacity = '1';
+                            moonIcon.style.transform = 'translate(-50%, -50%) rotate(0deg) scale(1)';
+                            sunIcon.style.opacity = '0';
+                            sunIcon.style.transform = 'translate(-50%, -50%) rotate(180deg) scale(0)';
+                        } else {
+                            moonIcon.style.opacity = '0';
+                            moonIcon.style.transform = 'translate(-50%, -50%) rotate(-180deg) scale(0)';
+                            sunIcon.style.opacity = '1';
+                            sunIcon.style.transform = 'translate(-50%, -50%) rotate(0deg) scale(1)';
+                        }
+                        
+                        this.style.transform = 'rotate(0deg)';
+                    }, 200);
+                });
+            }
+            
+            // Add navbar animation on page load
+            setTimeout(() => {
+                if (modernNavbar) {
+                    modernNavbar.style.transform = 'translateY(0)';
+                    modernNavbar.style.opacity = '1';
+                }
+            }, 500);
+            
+            // Initialize navbar with animation
+            if (modernNavbar) {
+                modernNavbar.style.transform = 'translateY(-100%)';
+                modernNavbar.style.opacity = '0';
+                modernNavbar.style.transition = 'all 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
+            }
+        });
+    </script>
+    <script src="cv.js"></script>
+</body>
+</html>
