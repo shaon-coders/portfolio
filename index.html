@@ -217,32 +217,8 @@
     </nav>
     <!-- High-Contrast Portfolio Header -->
     <section id="home" class="cinematic-header position-relative overflow-hidden" style="aspect-ratio: 16/9; min-height: 100vh;">
-        <!-- Pure Black Background -->
-        <div class="header-bg-black position-absolute w-100 h-100"></div>
-        
-        <!-- Animated Background Particles -->
-        <div class="particles-container position-absolute w-100 h-100">
-            <div class="particle particle-1"></div>
-            <div class="particle particle-2"></div>
-            <div class="particle particle-3"></div>
-            <div class="particle particle-4"></div>
-            <div class="particle particle-5"></div>
-            <div class="particle particle-6"></div>
-            <div class="particle particle-7"></div>
-            <div class="particle particle-8"></div>
-        </div>
-        
-        <!-- Geometric Shapes -->
-        <div class="geometric-shapes position-absolute w-100 h-100">
-            <div class="shape shape-triangle"></div>
-            <div class="shape shape-circle"></div>
-            <div class="shape shape-square"></div>
-            <div class="shape shape-hexagon"></div>
-        </div>
-        
         <!-- Gradient Overlay -->
         <div class="gradient-overlay position-absolute w-100 h-100"></div>
-        
         <!-- Content Container -->
         <div class="container-fluid h-100 position-relative">
             <div class="row h-100 align-items-center">
@@ -332,14 +308,6 @@
                 </div>
             </div>
         </div>
-        
-        <!-- Scroll Indicator -->
-        <div class="scroll-indicator">
-            <div class="scroll-arrow">
-                <i class="fas fa-chevron-down"></i>
-            </div>
-            <span class="scroll-text">Scroll Down</span>
-        </div>
     </section>
     <div class="section-divider">
         <svg viewBox="0 0 1440 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="url(#gradient1)" fill-opacity="1" d="M0,32L60,26.7C120,21,240,11,360,10.7C480,11,600,21,720,32C840,43,960,53,1080,53.3C1200,53,1320,43,1380,37.3L1440,32L1440,48L1380,48C1320,48,1200,48,1080,48C960,48,840,48,720,48C600,48,480,48,360,48C240,48,120,48,60,48L0,48Z"></path><defs><linearGradient id="gradient1" x1="0" y1="0" x2="1440" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#0d6efd"/><stop offset="1" stop-color="#6c63ff"/></linearGradient></defs></svg>
@@ -348,7 +316,7 @@
     <section id="about" class="py-5">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-lg-8">
+                <div class="col-lg-10">
                     <div class="card about-card shadow-lg border-start border-4 border-primary p-4 animate-fade-in">
                         <div class="d-flex align-items-center mb-3">
                             <i class="fas fa-user-graduate fa-2x text-primary me-3"></i>
@@ -357,8 +325,8 @@
                         <div class="row align-items-center">
                             <div class="col-md-8">
                                 <h4 class="fw-bold mb-2">Who Am I?</h4>
-                                <p class="mb-2">Md Shaon Sheikh is a dedicated and passionate Computer Science diploma student from Mangrove Institute of Science and Technology. With a strong foundation in both frontend and backend development, he has built real-world applications such as eCommerce systems and college ERP platforms using Django, HTML, CSS, JavaScript, and AJAX.</p>
-                                <p class="mb-2">He is also active in college co-curriculars, having hosted and led farewell events. Md Shaon is enthusiastic about software development, learning modern technologies, and dreams of working abroad or pursuing higher education in tech.</p>
+                                <p class="mb-2 about-justify">Md Shaon Sheikh is a dedicated and passionate Computer Science diploma student from Mangrove Institute of Science and Technology. With a strong foundation in both frontend and backend development, he has built real-world applications such as eCommerce systems and college ERP platforms using Django, HTML, CSS, JavaScript, and AJAX.</p>
+                                <p class="mb-2 about-justify">He is also active in college co-curriculars, having hosted and led farewell events. Md Shaon is enthusiastic about software development, learning modern technologies, and dreams of working abroad or pursuing higher education in tech.</p>
                                 <ul class="list-unstyled mb-0">
                                     <li><i class="fas fa-flag me-2 text-primary"></i><strong>Country:</strong> Bangladesh</li>
                                     <li><i class="fas fa-graduation-cap me-2 text-primary"></i><strong>Current Education:</strong> Diploma in Computer Science</li>
@@ -367,7 +335,7 @@
                             </div>
                             <div class="col-md-4 text-center mt-4 mt-md-0">
                                 <div class="about-img-container">
-                                    <img src="img/shaon.jpg" alt="About Me" class="img-fluid" style="max-width:150px;">
+                                    <img src="img/shaon.jpg" alt="About Me" class="img-fluid about-img-quad">
                                     <span class="about-badge"><i class="fas fa-user-graduate"></i></span>
                                 </div>
                             </div>
@@ -386,14 +354,14 @@
             <div class="section-title text-center mb-5">
                 <h2>Resume</h2>
                 <div class="line"></div>
-                <p class="text-info">My experience and education</p>
+                <p class="text-info" >My experience and education</p>
             </div>
             <div class="row">
                 <div class="col-lg-6 mb-5">
                     <div class="card resume-card shadow-lg border-start border-4 border-primary p-4 animate-fade-in">
-                        <div class="d-flex align-items-center mb-4">
-                            <i class="fas fa-briefcase fa-2x text-primary me-3"></i>
-                            <h3 class="mb-0">My Experience</h3>
+                        <div class="d-flex align-items-center mb-4" style="background-color: rgb(31, 67, 98);" >
+                            <i class="fas fa-briefcase fa-2x me-3" style="color: #ffffff;"></i>
+                            <h3 class="mb-0 resume-experience-header">My Experience</h3>
                         </div>
                         <div class="timeline">
                             <div class="timeline-item">
@@ -423,8 +391,8 @@
                 <div class="col-lg-6 mb-5">
                     <div class="card resume-card shadow-lg border-start border-4 border-primary p-4 animate-fade-in">
                         <div class="d-flex align-items-center mb-4">
-                            <i class="fas fa-graduation-cap fa-2x text-primary me-3"></i>
-                            <h3 class="mb-0">My Education</h3>
+                            <i class="fas fa-graduation-cap fa-2x me-3" style="color: #ffffff;"></i>
+                            <h3 class="mb-0 resume-education-header">My Education</h3>
                         </div>
                         <div class="timeline">
                             <div class="timeline-item">
@@ -474,52 +442,52 @@
             </div>
             <div class="row g-4 justify-content-center">
                 <div class="col-md-3 text-center">
-                    <div class="card h-100 p-3 service-card border-0 shadow-sm animate-fade-in">
+                    <div class="card h-70 p-3 service-card border-0 shadow-sm animate-fade-in">
                         <i class="fas fa-laptop-code fa-2x text-primary mb-3"></i>
                         <h5>Web Development</h5>
-                        <p>Full-stack web development using Django, HTML, CSS, JavaScript, and Bootstrap. Custom solutions tailored to your needs.</p>
+                        <p class="text-justify">Full-stack web development using Django, HTML, CSS, JavaScript, and Bootstrap. Custom solutions tailored to your needs.</p>
                     </div>
                 </div>
                 <div class="col-md-3 text-center">
-                    <div class="card h-100 p-3 service-card border-0 shadow-sm animate-fade-in">
+                    <div class="card h-70 p-3 service-card border-0 shadow-sm animate-fade-in">
                         <i class="fas fa-mobile-alt fa-2x text-primary mb-3"></i>
                         <h5>UI/UX Design</h5>
-                        <p>Modern, responsive designs with Bootstrap and custom CSS. User-friendly interfaces that enhance user experience.</p>
+                        <p class="text-justify">Modern, responsive designs with Bootstrap and custom CSS. User-friendly interfaces that enhance user experience.</p>
                     </div>
                 </div>
                 <div class="col-md-3 text-center">
-                    <div class="card h-100 p-3 service-card border-0 shadow-sm animate-fade-in">
+                    <div class="card h-70 p-3 service-card border-0 shadow-sm animate-fade-in">
                         <i class="fas fa-cogs fa-2x text-primary mb-3"></i>
                         <h5>Website Maintenance</h5>
-                        <p>Regular updates, bug fixes, and performance optimization. Keep your website running smoothly and securely.</p>
+                        <p class="text-justify">Regular updates, bug fixes, and performance optimization. Keep your website running smoothly and securely.</p>
                     </div>
                 </div>
                 <div class="col-md-3 text-center">
-                    <div class="card h-100 p-3 service-card border-0 shadow-sm animate-fade-in">
+                    <div class="card h-70 p-3 service-card border-0 shadow-sm animate-fade-in">
                         <i class="fas fa-server fa-2x text-primary mb-3"></i>
                         <h5>Database Design</h5>
-                        <p>Efficient database architecture and management. Secure, scalable solutions for your data needs.</p>
+                        <p class="text-justify">Efficient database architecture and management. Secure, scalable solutions for your data needs.</p>
                     </div>
                 </div>
                 <div class="col-md-3 text-center">
-                    <div class="card h-100 p-3 service-card border-0 shadow-sm animate-fade-in">
+                    <div class="card h-70 p-3 service-card border-0 shadow-sm animate-fade-in">
                         <i class="fas fa-desktop"></i>
                         <h5>Operating System Management</h5>
-                        <p>I provide installation, configuration, and maintenance services for operating systems.</p>
+                        <p class="text-justify">I provide installation, configuration, and maintenance services for operating systems.</p>
                     </div>
                 </div>
                 <div class="col-md-3 text-center">
-                    <div class="card h-100 p-3 service-card border-0 shadow-sm animate-fade-in">
+                    <div class="card h-70 p-3 service-card border-0 shadow-sm animate-fade-in">
                         <i class="fas fa-headset fa-2x text-primary mb-3"></i>
                         <h5>IT Support & Services</h5>
-                        <p>I provide technical support and IT solutions to ensure smooth business operations.</p>
+                        <p class="text-justify">I provide technical support and IT solutions to ensure smooth business operations.</p>
                     </div>
                 </div>
                 <div class="col-md-3 text-center">
-                    <div class="card h-100 p-3 service-card border-0 shadow-sm animate-fade-in">
+                    <div class="card h-70 p-3 service-card border-0 shadow-sm animate-fade-in">
                         <i class="fas fa-robot"></i>
                         <h5>Robotics Code & Robotic Services</h5>
-                        <p>I develop robotics software and provide automation solutions to enhance efficiency.</p>
+                        <p class="text-justify">I develop robotics software and provide automation solutions to enhance efficiency.</p>
                     </div>
                 </div>
             </div>
@@ -850,17 +818,10 @@
                                     <input type="tel" class="form-control contact-input" id="phone" placeholder="Phone number">
                                 </div>
                             </div>
-                            <div class="mb-4">
-                                <select class="form-select contact-select" id="service" required>
-                                    <option value="">Choose Service</option>
-                                    <option value="django-development">Backend Development</option>
-                                    <option value="frontend-development">Frontend Development</option>
-                                    <option value="full-stack">Full Stack Development</option>
-                                    <option value="consultation">UI/UX Design</option>
-                                    <option value="website-maintenance">Website Maintenance</option>
-                                    <option value="it-support">IT support & services</option>
-
-                                </select>
+                            <div class="row g-3 mb-4">
+                                <div class="col-md-12">
+                                    <input type="text" class="form-control contact-input" id="subject" placeholder="Subject" required>
+                                </div>
                             </div>
                             <div class="mb-4">
                                 <textarea class="form-control contact-textarea" id="message" rows="4" placeholder="Tell me about your project..." required></textarea>
@@ -873,21 +834,31 @@
                 <!-- Contact Info Card -->
                 <div class="col-lg-6">
                     <div class="contact-card-right h-100 p-5">
-                        <h2 class="contact-info-title mb-4">Contact Info</h2>
+                        <h2 class="contact-info-title mb-4" style="color: white;">Contact Info</h2>
                         <p class="contact-info-subtitle mb-5">Feel free to reach out to me through any of these channels.</p>
-                        
-                        <div class="contact-info-item mb-4">
-                            <div class="contact-info-label">PHONE</div>
-                            <div class="contact-info-value">01307201070</div>
+                        <!-- Phone -->
+                        <div class="contact-info-item mb-4 d-flex align-items-center">
+                            <i class="fas fa-phone-alt fa-lg me-3 text-info"></i>
+                            <div>
+                                <div class="contact-info-label">PHONE</div>
+                                <div class="contact-info-value">01307201070</div>
+                            </div>
                         </div>
-                        
-                        <div class="contact-info-item mb-5">
-                            <div class="contact-info-label">EMAIL</div>
-                            <div class="contact-info-value">mdshaonsheikh546@gmail.com</div>
+                        <!-- Email -->
+                        <div class="contact-info-item mb-5 d-flex align-items-center">
+                            <i class="fas fa-envelope fa-lg me-3 text-info"></i>
+                            <div>
+                                <div class="contact-info-label">EMAIL</div>
+                                <div class="contact-info-value">mdshaonsheikh546@gmail.com</div>
+                            </div>
                         </div>
-                        <div class="contact-info-item mb-5">
-                            <div class="contact-info-label">ADDRESS</div>
-                            <div class="contact-info-value">Boikali, Khulna, Bangladesh</div>
+                        <!-- Address -->
+                        <div class="contact-info-item mb-5 d-flex align-items-center">
+                            <i class="fas fa-map-marker-alt fa-lg me-3 text-info"></i>
+                            <div>
+                                <div class="contact-info-label">ADDRESS</div>
+                                <div class="contact-info-value">Boikali, Khulna, Bangladesh</div>
+                            </div>
                         </div>
                         
                         <div class="social-links-modern">
@@ -913,14 +884,13 @@
     <footer class="modern-footer">
         <div class="footer-content">
             <!-- Logo Section -->
-            <div class="footer-logo-section">
-                <a href="#home" class="footer-logo">
-                    <div class="logo-icon">
-                        <img src="img/logo.png" alt="Logo" style="width: 100px; height: 100px;">
+            <div class="navbar-brand-section">
+                <a class="modern-navbar-brand" href="index.html">
+                    <div class="brand-logo">
+                        <img src="img/logo.png" alt="Logo">
                     </div>
                 </a>
             </div>
-            
             <!-- Navigation Links -->
             <ul class="footer-links">
                 <li><a href="#home" class="footer-link">Home</a></li>
@@ -931,26 +901,6 @@
                 <li><a href="#skills" class="footer-link">Skills</a></li>
                 <li><a href="#contact" class="footer-link">Contact</a></li>
             </ul>
-        </div>
-        
-        <!-- Footer Bottom -->
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6">
-                        <p class="footer-copyright">
-                            &copy; <span id="currentYear"></span> Md Shaon Sheikh. All rights reserved.
-                        </p>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="footer-bottom-links">
-                            <a href="#" class="footer-bottom-link">Privacy Policy</a>
-                            <a href="#" class="footer-bottom-link">Terms of Service</a>
-                            <a href="#" class="footer-bottom-link">Sitemap</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </footer>
     <!-- Bootstrap JS -->
